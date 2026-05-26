@@ -203,9 +203,8 @@ Add screenshots of:
 
 Example:
 
-```md
-![Homepage](./assets/images/homepage.png)
-```
+
+![Homepage](./assets/images/homepagess.png)
 
 ---
 
