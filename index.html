@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>məllowspace | Mental Wellness App</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+  <div class="blob blob-one"></div>
+  <div class="blob blob-two"></div>
+  <div class="blob blob-three"></div>
+
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="logo">məllowspace</h1>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#checkin">Check In</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#history">History</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-content glass-card">
+        <p class="tagline">A soft place for heavy feelings</p>
+
+        <h2>Your gentle space to pause, breathe, and feel.</h2>
+
+        <p class="hero-text">
+          məllowspace helps you check in with your mood, write what is on your mind,
+          and receive calming Spotify suggestions based on how you feel.
+        </p>
+
+        <a href="#checkin" class="primary-btn">Start Check-In</a>
+      </div>
+    </section>
+
+    <section class="checkin-section" id="checkin">
+      <div class="section-heading">
+        <h2>How are you feeling?</h2>
+        <p>Choose the mood that feels closest to your heart right now.</p>
+      </div>
+
+      <div class="mood-grid">
+        <button class="mood-card" data-mood="happy">😊 Happy</button>
+        <button class="mood-card" data-mood="sad">😔 Sad</button>
+        <button class="mood-card" data-mood="anxious">😟 Anxious</button>
+        <button class="mood-card" data-mood="overwhelmed">😣 Overwhelmed</button>
+        <button class="mood-card" data-mood="tired">😴 Tired</button>
+        <button class="mood-card" data-mood="angry">😤 Angry</button>
+      </div>
+
+      <form class="journal-form glass-card" id="journal-form">
+        <p class="selected-mood-text" id="selected-mood-text">
+          No mood selected yet.
+        </p>
+
+        <label for="journal-entry">Write what is on your mind</label>
+
+        <textarea
+          id="journal-entry"
+          rows="7"
+          placeholder="Start typing here... məllowspace is listening."
+        ></textarea>
+
+        <div class="prompt-box">
+          <p>Need help continuing?</p>
+
+          <div class="prompt-buttons">
+            <button type="button" class="prompt-btn">Right now, I feel...</button>
+            <button type="button" class="prompt-btn">I think I need...</button>
+            <button type="button" class="prompt-btn">
+              What I wish someone knew is...
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Save My Check-In</button>
+      </form>
+    </section>
+
+    <section class="music-section" id="music">
+      <div class="section-heading">
+        <h2>Spotify Comfort Picks</h2>
+        <p>Your music suggestions will appear here based on your selected mood.</p>
+      </div>
+
+      <div class="music-card glass-card" id="music-card">
+        <h3>No mood selected yet</h3>
+        <p>Choose a mood above to receive soft Spotify recommendations.</p>
+      </div>
+    </section>
+
+    <section class="history-section" id="history">
+      <div class="section-heading">
+        <h2>Your Check-In History</h2>
+        <p>Your saved reflections will appear here.</p>
+      </div>
+
+      <div id="history-list" class="history-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 məllowspace. A gentle space for emotional check-ins.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
