@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | məllowspace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="blob blob-one"></div>
+  <div class="blob blob-two"></div>
+
+  <section class="auth-section">
+    <form class="auth-card glass-card" id="login-form">
+      <h1>Welcome back</h1>
+      <p>Log in to continue your check-ins.</p>
+
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" required />
+
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" required />
+
+      <button type="submit" class="submit-btn">Login</button>
+
+      <p class="auth-link">
+        Don't have an account?
+        <a href="create-account.html">Create one</a>
+      </p>
+    </form>
+  </section>
+
+  <script src="auth.js"></script>
+</body>
+</html>
