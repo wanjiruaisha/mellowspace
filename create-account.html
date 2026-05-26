@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account | məllowspace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="blob blob-one"></div>
+  <div class="blob blob-three"></div>
+
+  <section class="auth-section">
+    <form class="auth-card glass-card" id="signup-form">
+      <h1>Create account</h1>
+      <p>Start your gentle check-in journey.</p>
+
+      <label for="signup-name">Full Name</label>
+      <input type="text" id="signup-name" required />
+
+      <label for="signup-email">Email</label>
+      <input type="email" id="signup-email" required />
+
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" required minlength="6" />
+
+      <button type="submit" class="submit-btn">Create Account</button>
+
+      <p class="auth-link">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+    </form>
+  </section>
+
+  <script src="auth.js"></script>
+</body>
+</html>
